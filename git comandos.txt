@@ -1,0 +1,50 @@
+# Comando pra criar branch
+git checkout -b <nomedabranch>
+Sem o -b e o nome da branch vc muda para outra branch
+
+# Muda branch mais pra branch homolog e registra no git,
+# no nome pode mudar para o branch desejada.
+git push -u origin homolog
+
+# Exclui a branch, caso ela nao tenha sido enviada.
+# Caso contrario excluir ela diretamente no repositorio
+git branch -D <nomedabranch>
+
+# Para deletar a branch diretamente no gib
+git push origin --delete <nomedabranch>
+
+Hierarquia de branch padrao
+main 
+    homolog
+            dev
+
+# Comando enviados pelo professor em aula
+
+            Manipulando branch
+criando branch
+git checkout -b nome branch
+
+verificando branch
+git branch 
+
+mudando de branch
+git checkout nome branch
+
+subindo branch para github
+git push -u origin nome branch
+
+excluindo branch
+git branch -D nome branch
+
+merge  branch
+git merge  nome branch   
+
+mudando nome branch
+git branch -m    Novo nome  
+
+excluindo branch remota
+git push origin —delete nome branch 
+
+baixar branch remota
+git  checkout nome branch
+
